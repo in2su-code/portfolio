@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>서비스 기획 | 이수인 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="index.html">이수인<span>헬스케어 AI PM</span></a>
+        <div class="nav-links">
+          <a href="index.html">소개</a>
+          <a href="modeling.html">예측 모델링</a>
+          <a href="medical-ai.html">의료 데이터</a>
+          <a class="active" href="product.html">서비스 기획</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">상세 프로젝트 03</p>
+        <h1>데이터 분석 결과를 사용자가 판단할 수 있는 서비스로 구체화하는 방식</h1>
+        <p>
+          DIVE 2026 대시보드, 공모전·해커톤 제안 프로젝트, 그리고 Healthcare AI 서비스 설계 관점을 정리했습니다.
+        </p>
+      </section>
+
+      <section class="case-layout">
+        <article class="case-block">
+          <div class="case-text">
+            <h2>DIVE 2026 도시 접근성 사각지대 대시보드</h2>
+            <div class="case-meta">
+              <div><strong>기간</strong>2026.06.01-2026.07.26</div>
+              <div><strong>역할</strong>AI 모델링 · 데이터 분석 · UX/UI · 프로토타입</div>
+              <div><strong>기술</strong>Streamlit · Figma · Folium · GeoPandas</div>
+              <div><strong>결과</strong>예선 통과 · 본선 완주 · 공식 수료</div>
+            </div>
+            <h3>문제</h3>
+            <p>
+              교통약자 이동수요와 무장애 인프라 데이터가 분리되어 있어
+              지역별 접근성 사각지대를 직관적으로 파악하기 어려웠습니다.
+            </p>
+            <h3>실행</h3>
+            <p>
+              이동수요와 인프라 데이터를 융합 분석하고, N3XT 위험도 예측 모델과 S1GN 사용자 변화 지표를 설계했습니다.
+              지도 기반 대시보드로 접근성 격차를 시각화하고 정책 판단 화면으로 연결했습니다.
+            </p>
+            <h3>기획 관점</h3>
+            <p>
+              분석 결과는 사용자가 바로 판단할 수 있는 의사결정 화면으로 연결되어야 합니다.
+              데이터의 의미, 위험도, 다음 행동이 한 화면에서 이해되어야 서비스 가치가 커집니다.
+            </p>
+          </div>
+          <figure class="visual-frame">
+            <img src="assets/dive.png" alt="DIVE 2026 도시 접근성 사각지대 대시보드 슬라이드">
+          </figure>
+        </article>
+
+        <section class="section" aria-labelledby="proposal-title">
+          <div class="section-title">
+            <h2 id="proposal-title">공모전·해커톤 제안 경험</h2>
+            <p>
+              수상 여부와 별개로 문제를 정의하고 사용자 흐름, 지표, 프로토타입으로 바꾸는 훈련을 반복했습니다.
+            </p>
+          </div>
+          <div class="two-col">
+            <article class="evidence-card">
+              <h3>MIND QUEST</h3>
+              <p>
+                청소년 정서 지원 서비스 제안입니다. 정서 변화를 표현하거나 도움을 요청하기 어려운 상황을 문제로 보고,
+                이야기 선택과 응답 흐름에 따라 콘텐츠를 조정하고 자기돌봄·상담 정보로 연결하는 구조를 제안했습니다.
+              </p>
+            </article>
+            <article class="evidence-card">
+              <h3>Dopamin-Go</h3>
+              <p>
+                청년 디지털 과의존 자기조절 서비스 제안입니다. 사용 패턴을 바탕으로 위험 신호, 목표,
+                대체 활동, 변화 기록을 제공해 사용자가 다음 행동을 실행할 수 있도록 설계했습니다.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <article class="case-block reverse">
+          <figure class="visual-frame">
+            <img src="assets/product-thinking.png" alt="문제를 서비스로 구체화하는 방식 슬라이드">
+          </figure>
+          <div class="case-text">
+            <h2>설계하고 싶은 Healthcare AI 서비스</h2>
+            <h3>결과 설명</h3>
+            <p>
+              예측값만 보여주지 않고 주요 요인, 데이터 범위, 한계를 함께 제시해야 합니다.
+              환자에게 민감하게 받아들여질 수 있는 결과일수록 단정적인 표현을 피해야 합니다.
+            </p>
+            <h3>업무 흐름</h3>
+            <p>
+              의료진이 별도의 화면을 찾아다니지 않아도 진료 과정에서 필요한 시점에
+              환자별 위험 요인과 판단 근거를 확인할 수 있어야 합니다.
+            </p>
+            <h3>다음 행동과 안전</h3>
+            <p>
+              상담, 검사, 생활습관 관리 등 다음 단계로 연결하고 데이터 수집 목적과 활용 범위를 밝혀야 합니다.
+              의료 AI는 신뢰와 개인정보 보호가 제품 경험의 일부입니다.
+            </p>
+          </div>
+        </article>
+
+        <div class="insight-band">
+          <p>
+            만들고 싶은 제품은 의료 데이터를 활용해 환자가 자신의 상태를 이해하고,
+            의료진이 더 나은 설명과 의사결정을 할 수 있도록 돕는 AI 기반 의사결정 지원 서비스입니다.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span><a href="index.html">소개로 돌아가기</a></span>
+        <span>서비스 기획 상세</span>
+      </div>
+    </footer>
+  </body>
+</html>

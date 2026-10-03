@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>스트레스 지수 예측 AI | 이수인 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="index.html">이수인<span>헬스케어 AI PM</span></a>
+        <div class="nav-links">
+          <a href="index.html">소개</a>
+          <a class="active" href="stress.html">스트레스 예측</a>
+          <a href="infertility.html">난임 예측</a>
+          <a href="xray.html">X-ray 분류</a>
+          <a href="dive.html">DIVE</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">대표 프로젝트</p>
+        <h1>스트레스 지수 예측 AI</h1>
+        <p>
+          반복 오차가 발생하는 구간을 찾아 모델을 보완하고, 리더보드 1위와 Score 0.12369를 달성한 예측 모델링 프로젝트입니다.
+        </p>
+      </section>
+
+      <section class="case-layout">
+        <article class="case-block">
+          <div class="case-text">
+            <div class="case-meta">
+              <div><strong>기간</strong>2026.07.30-2026.08.07</div>
+              <div><strong>역할</strong>데이터 분석 · 모델링 · Feature Engineering</div>
+              <div><strong>기술</strong>Python · Pandas · NumPy · Scikit-learn · SVR · Ensemble</div>
+              <div><strong>결과</strong>리더보드 1위 · Score 0.12369</div>
+            </div>
+            <h3>문제</h3>
+            <p>
+              스트레스 지수 예측에서 특정 구간과 경로별로 반복 오차가 발생했습니다.
+              단일 모델만으로는 안정적인 예측 성능을 확보하기 어려웠습니다.
+            </p>
+            <h3>실행</h3>
+            <p>
+              반복 오차 구조를 분석하고 근무시간 구간, 경로, 희귀 레벨 등 주요 Feature를 해석했습니다.
+              RBF-SVR Anchor, Lookup, Route-Specific SVR, Ensemble 전략을 적용해 구간별 예측 안정성을 개선했습니다.
+            </p>
+            <h3>기획 관점</h3>
+            <p>
+              예측 모델은 전체 평균 성능뿐 아니라 오차가 반복되는 사용자·상황·구간을 찾아
+              서비스 위험 구간을 줄이는 방식으로 개선되어야 한다는 점을 배웠습니다.
+            </p>
+          </div>
+          <figure class="visual-frame">
+            <img src="assets/stress.png" alt="스트레스 지수 예측 성능 개선 추이 슬라이드">
+          </figure>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

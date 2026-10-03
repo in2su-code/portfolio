@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>흉부 X-ray 폐렴 분류 AI | 이수인 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="index.html">이수인<span>헬스케어 AI PM</span></a>
+        <div class="nav-links">
+          <a href="index.html">소개</a>
+          <a href="stress.html">스트레스 예측</a>
+          <a href="infertility.html">난임 예측</a>
+          <a class="active" href="xray.html">X-ray 분류</a>
+          <a href="dive.html">DIVE</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">대표 프로젝트</p>
+        <h1>흉부 X-ray 폐렴 분류 AI</h1>
+        <p>
+          여러 CNN backbone을 비교하고 ConvNeXt-Tiny 기반 최종 모델을 선정해 성능을 개선한 의료 이미지 분류 프로젝트입니다.
+        </p>
+      </section>
+
+      <section class="case-layout">
+        <article class="case-block">
+          <div class="case-text">
+            <div class="case-meta">
+              <div><strong>기간</strong>2026.06.16-2026.07.01</div>
+              <div><strong>역할</strong>딥러닝 모델링 · 의료 이미지 분석 · 하드케이스 분석</div>
+              <div><strong>기술</strong>Python · PyTorch · torchvision · ConvNeXt · scikit-learn</div>
+              <div><strong>결과</strong>Public Score 0.9679 · 개인 평가 2위</div>
+            </div>
+            <h3>문제</h3>
+            <p>
+              흉부 X-ray 이미지에서 정상과 폐렴을 분류하는 모델이 필요했습니다.
+              단순 정확도보다 실제 의료 현장에서 신뢰할 수 있는 분류 안정성이 중요했습니다.
+            </p>
+            <h3>실행</h3>
+            <p>
+              ResNet, DenseNet, EfficientNet, ConvNeXt 계열을 비교하고 ConvNeXt-Tiny 기반 최종 모델을 선정했습니다.
+              Threshold 조정과 Hard Case 분석을 통해 모델이 헷갈리는 샘플을 추적하고 성능을 개선했습니다.
+            </p>
+            <h3>기획 관점</h3>
+            <p>
+              의료 AI는 높은 Accuracy뿐 아니라 외부 검증, 오류 가능성, 설명 가능성을 함께 고려해야
+              실제 의료진이 신뢰할 수 있다고 느꼈습니다.
+            </p>
+          </div>
+          <figure class="visual-frame">
+            <img src="assets/xray.png" alt="흉부 X-ray 폐렴 분류 실험 여정 슬라이드">
+          </figure>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

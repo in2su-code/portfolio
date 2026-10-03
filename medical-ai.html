@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>의료 데이터 | 이수인 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="index.html">이수인<span>헬스케어 AI PM</span></a>
+        <div class="nav-links">
+          <a href="index.html">소개</a>
+          <a href="modeling.html">예측 모델링</a>
+          <a class="active" href="medical-ai.html">의료 데이터</a>
+          <a href="product.html">서비스 기획</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">상세 프로젝트 02</p>
+        <h1>의료 이미지와 건강검진 데이터를 사용자 관점으로 해석한 프로젝트</h1>
+        <p>
+          의료 AI 프로젝트에서는 모델 성능뿐 아니라 검증, 오류 분석, 사용자에게 전달되는 설명 방식을 함께 고려했습니다.
+        </p>
+      </section>
+
+      <section class="case-layout">
+        <article class="case-block">
+          <div class="case-text">
+            <h2>흉부 X-ray 폐렴 분류 AI</h2>
+            <div class="case-meta">
+              <div><strong>기간</strong>2026.06.16-2026.07.01</div>
+              <div><strong>역할</strong>딥러닝 모델링 · 의료 이미지 분석 · 하드케이스 분석</div>
+              <div><strong>기술</strong>Python · PyTorch · torchvision · ConvNeXt</div>
+              <div><strong>결과</strong>Public Score 0.9679 · 개인 평가 2위</div>
+            </div>
+            <h3>문제</h3>
+            <p>
+              흉부 X-ray 이미지에서 정상과 폐렴을 분류하는 의료 이미지 AI 모델이 필요했습니다.
+              단순 정확도보다 실제 의료 현장에서 신뢰할 수 있는 분류 안정성이 중요했습니다.
+            </p>
+            <h3>실행</h3>
+            <p>
+              ResNet, DenseNet, EfficientNet, ConvNeXt 계열을 비교하고 ConvNeXt-Tiny 기반 최종 모델을 선정했습니다.
+              Threshold 조정과 Hard Case 분석을 통해 모델이 헷갈리는 샘플을 추적하고 성능을 개선했습니다.
+            </p>
+            <h3>기획 관점</h3>
+            <p>
+              의료 AI는 높은 Accuracy뿐 아니라 외부 검증, 오류 가능성, 설명 가능성을 함께 고려해야
+              실제 의료진이 신뢰할 수 있다고 느꼈습니다.
+            </p>
+          </div>
+          <figure class="visual-frame">
+            <img src="assets/xray.png" alt="흉부 X-ray 폐렴 분류 실험 여정 슬라이드">
+          </figure>
+        </article>
+
+        <article class="case-block reverse">
+          <figure class="visual-frame">
+            <img src="assets/healthcheck.png" alt="건강검진 데이터 기반 건강 인사이트 슬라이드">
+          </figure>
+          <div class="case-text">
+            <h2>건강검진 데이터 기반 건강 인사이트</h2>
+            <div class="case-meta">
+              <div><strong>기간</strong>2026.04.27-2026.04.29</div>
+              <div><strong>역할</strong>데이터 분석 · 통계 검정 · 건강 인사이트 도출</div>
+              <div><strong>기술</strong>Python · Pandas · NumPy · SciPy · Seaborn</div>
+              <div><strong>결과</strong>개인 맞춤형 건강 리포트 가능성 확인</div>
+            </div>
+            <h3>문제</h3>
+            <p>
+              건강검진 데이터를 생활습관과 건강 지표 관계 분석으로 연결하고,
+              사용자가 이해할 수 있는 개인 맞춤형 건강 인사이트로 풀어내야 했습니다.
+            </p>
+            <h3>실행</h3>
+            <p>
+              흡연 여부에 따른 건강 지표 차이를 분석하고 통계 검정과 시각화를 통해 주요 차이를 확인했습니다.
+              혈액 지표와 대사 지표를 중심으로 건강 위험 요인을 해석했습니다.
+            </p>
+            <h3>기획 관점</h3>
+            <p>
+              건강 데이터는 단순 분석 결과보다 사용자가 이해하고 행동할 수 있는 리포트 형태로 전달될 때
+              서비스 가치가 커진다고 느꼈습니다.
+            </p>
+          </div>
+        </article>
+
+        <div class="insight-band">
+          <p>
+            의료 AI와 건강 데이터 서비스는 성능 지표, 오류 가능성, 사용자 설명 방식이 함께 설계되어야 합니다.
+            이 관점은 Healthcare AI PM에게 중요한 제품 판단 기준입니다.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span><a href="index.html">소개로 돌아가기</a></span>
+        <span>의료 데이터 상세</span>
+      </div>
+    </footer>
+  </body>
+</html>

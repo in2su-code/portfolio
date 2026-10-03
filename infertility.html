@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>난임 환자 임신 성공 여부 예측 AI | 이수인 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="index.html">이수인<span>헬스케어 AI PM</span></a>
+        <div class="nav-links">
+          <a href="index.html">소개</a>
+          <a href="stress.html">스트레스 예측</a>
+          <a class="active" href="infertility.html">난임 예측</a>
+          <a href="xray.html">X-ray 분류</a>
+          <a href="dive.html">DIVE</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">대표 프로젝트</p>
+        <h1>난임 환자 임신 성공 여부 예측 AI</h1>
+        <p>
+          약 25만 건의 난임 시술 데이터를 분석하고 의료 도메인 가설 기반 Feature Engineering을 수행한 프로젝트입니다.
+        </p>
+      </section>
+
+      <section class="case-layout">
+        <article class="case-block">
+          <div class="case-text">
+            <div class="case-meta">
+              <div><strong>기간</strong>2026.05.22-2026.06.01</div>
+              <div><strong>역할</strong>데이터 분석 · 모델링 · Feature Engineering</div>
+              <div><strong>기술</strong>Python · Pandas · NumPy · Scikit-learn · CatBoost · LightGBM</div>
+              <div><strong>결과</strong>Public LB 0.74248 · 팀 평가 1위</div>
+            </div>
+            <h3>문제</h3>
+            <p>
+              난임 시술 데이터에는 결측과 범주형 변수가 많아 단순 모델링보다
+              시술 과정과 의료 도메인 가설을 함께 고려한 변수 해석이 필요했습니다.
+            </p>
+            <h3>실행</h3>
+            <p>
+              주요 변수를 해석하고 결측 여부를 정보로 활용하는 Missing Flag 변수를 생성했습니다.
+              CatBoost와 LightGBM 모델을 비교하고 앙상블 전략으로 예측 성능을 개선했습니다.
+            </p>
+            <h3>기획 관점</h3>
+            <p>
+              의료 AI는 성능 점수뿐 아니라 결과를 사용자가 신뢰하고 이해할 수 있는 방식으로 설명되어야 합니다.
+              예측 근거와 한계를 함께 제공하는 제품 경험이 필요하다고 느꼈습니다.
+            </p>
+          </div>
+          <figure class="visual-frame">
+            <img src="assets/infertility.png" alt="난임 환자 임신 성공 여부 예측 슬라이드">
+          </figure>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
