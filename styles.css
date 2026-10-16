@@ -97,7 +97,7 @@ img {
 .hero {
   width: min(var(--max), calc(100% - 40px));
   margin: 0 auto;
-  padding: 82px 0 34px;
+  padding: 12px 0 24px;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   gap: 46px;
@@ -638,7 +638,7 @@ h1 {
   }
 
   .hero {
-    padding-top: 54px;
+    padding-top: 24px;
   }
 
   .profile-visual {
@@ -678,7 +678,7 @@ h1 {
   }
 
   .hero {
-    padding-top: 42px;
+    padding-top: 20px;
     width: min(var(--max), calc(100% - 28px));
     gap: 26px;
   }
