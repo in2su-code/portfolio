@@ -757,3 +757,15 @@ h1 {
     margin: 0;
   }
 }
+.profile-visual figcaption {
+  text-align: center;
+}
+@media (min-width: 921px) {
+  .hero-content {
+    padding-right: 72px;
+  }
+  .hero .profile-visual {
+    width: calc(100% + 40px);
+    justify-self: end;
+  }
+}
