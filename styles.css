@@ -742,3 +742,18 @@ h1 {
     width: min(330px, 100%);
   }
 }
+@media (min-width: 921px) {
+  .hero {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .hero-content {
+    grid-column: 1 / 4;
+    padding-right: 32px;
+  }
+  .hero .profile-visual {
+    grid-column: 4;
+    width: 100%;
+    margin: 0;
+  }
+}
