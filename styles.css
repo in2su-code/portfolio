@@ -128,7 +128,7 @@ h1 {
   margin: 22px 0 0;
   font-size: 19px;
   color: #385568;
-  max-width: 680px;
+  max-width: none;
 }
 
 .hero-tags {
